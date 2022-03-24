@@ -1,0 +1,62 @@
+[
+    {
+        "image": "assets/img/pump.jpeg",
+        "title": "Air Pump",
+        "price": "$9.99"
+    },
+    {
+        "image": "assets/img/goal1.png",
+        "title": "Small Goal Post",
+        "price": "$199.99"
+    },
+    {
+        "image": "assets/img/goal2.png",
+        "title": "Soccer Goal Post",
+        "price": "$399.99"
+    },
+    {
+        "image": "assets/img/shin.jpeg",
+        "title": "Nike Mercurial",
+        "price": "$20.00"
+    },
+    {
+        "image": "assets/img/cleats1.jpeg",
+        "title": "Adidas superfly",
+        "price": "$120.00"
+    },
+    {
+        "image": "assets/img/cleats2.jpeg",
+        "title": "Shin Guards",
+        "price": "$9.99"
+    },
+    {
+        "image": "assets/img/cleats3.jpeg",
+        "title": "Shin Guards",
+        "price": "$9.99"
+    },
+    {
+        "image": "assets/img/cleats4.jpeg",
+        "title": "Shin Guards",
+        "price": "$9.99"
+    },
+    {
+        "image": "assets/img/shin.jpeg",
+        "title": "Shin Guards",
+        "price": "$9.99"
+    },
+    {
+        "image": "assets/img/shin.jpeg",
+        "title": "Shin Guards",
+        "price": "$9.99"
+    },
+    {
+        "image": "assets/img/shin.jpeg",
+        "title": "Shin Guards",
+        "price": "$9.99"
+    },
+    {
+        "image": "assets/img/shin.jpeg",
+        "title": "Shin Guards",
+        "price": "$9.99"
+    }
+]
