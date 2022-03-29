@@ -2,61 +2,73 @@
     {
         "image": "assets/img/pump.jpeg",
         "title": "Air Pump",
-        "price": "$9.99"
+        "price": "$9.99",
+        "description":"Fill the air in in ball."
     },
     {
         "image": "assets/img/goal1.png",
         "title": "Small Goal Post",
-        "price": "$199.99"
+        "price": "$199.99",
+        "description":"This is 3ft tall and 5ft wide."
     },
     {
         "image": "assets/img/goal2.png",
         "title": "Soccer Goal Post",
-        "price": "$399.99"
+        "price": "$399.99",
+        "description":"This is a 8 feet tall (2.44 m) by 24 feet wide (7.32 m)."
     },
     {
         "image": "assets/img/shin.jpeg",
         "title": "Nike Mercurial",
-        "price": "$20.00"
+        "price": "$20.00",
+        "description":"protect your feet "
     },
     {
         "image": "assets/img/cleats1.jpeg",
         "title": "Adidas superfly",
-        "price": "$120.00"
+        "price": "$120.00",
+        "description":"The Nike Mercurial sets you up for speed."
     },
     {
         "image": "assets/img/cleats2.jpeg",
-        "title": "Shin Guards",
-        "price": "$9.99"
+        "title": "Nike Premier II FG",
+        "price": "$150.00",
+        "description":"Robust Challenge lorem "
     },
     {
         "image": "assets/img/cleats3.jpeg",
-        "title": "Shin Guards",
-        "price": "$9.99"
+        "title": "Nike Mercurial FG",
+        "price": "$130.00",
+        "description":"Soft kangaroo leather conforms to your foot for a classic."
     },
     {
         "image": "assets/img/cleats4.jpeg",
-        "title": "Shin Guards",
-        "price": "$9.99"
+        "title": "Nike Phantom",
+        "price": "$110.00",
+        "description":"dynamic fit collar and versatile multi-surface"
     },
     {
         "image": "assets/img/shin.jpeg",
-        "title": "Shin Guards",
-        "price": "$9.99"
+        "title": "Barcelona Home Kit",
+        "price": "$89.99",
+        "description":"The FC Barcelona Stadium Home Jersey features highly breathable fabric."
     },
     {
         "image": "assets/img/shin.jpeg",
-        "title": "Shin Guards",
-        "price": "$9.99"
+        "title": "Real Madrid Home Kit",
+        "price": "$89.99",
+        "description":"This shirt will keep you comfortable with soft fabric and moisture-absorbing AEROREADY."
     },
     {
         "image": "assets/img/shin.jpeg",
-        "title": "Shin Guards",
-        "price": "$9.99"
+        "title": "Ajax Home Kit",
+        "price": "$89.99",
+        "description":"Highly breathable fabric helps keep sweat off your skin."
     },
     {
         "image": "assets/img/shin.jpeg",
-        "title": "Shin Guards",
-        "price": "$9.99"
+        "title": "Liverpool Home Kit",
+        "price": "$89.99",
+        "description":"Highly breathable fabric helps keep sweat off your skin."
     }
 ]

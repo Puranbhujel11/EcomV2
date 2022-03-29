@@ -1,5 +1,5 @@
 import React from 'react';
-import Products from './productData.json';
+import productList from './productData.json';
 
 function Product(){
     return (
@@ -11,11 +11,11 @@ function Product(){
                 <p className = "text-light">Whether you’re a first time player or looking to get a bit more serious in your soccer career, Soccer United has a full stock of soccer shoes to help you be the best player you can be.</p>
 
                 <div className = "product-items">
-                   {/* single product */}
+                 
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product_img">
-                                <img src = "img/pump.jpeg" alt = "product image"> </img>
+                                <img src = "assets/img/pump.jpeg" alt = "product image"/> 
                             </div>
                         </div>
                         <div className = "product-info">
@@ -26,7 +26,7 @@ function Product(){
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "far fa-star"></i></span>
+                                    <span><i className = "fas fa-star"></i></span>
                                 </div>
                             </div>
                             <a href = "#" className = "product_name">Nike Air Pump</a>
@@ -36,12 +36,14 @@ function Product(){
                             </button>
                         </div>
                     </div>
+
+
                     
-                    {/* single product  */}
+                   
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product_img">
-                                <img src = "img/goal1.png" alt = "product image"> </img> 
+                                <img src = "assets/img/goal1.png" alt = "product image"/>  
                             </div>
                            
                         </div>
@@ -54,7 +56,7 @@ function Product(){
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "far fa-star"></i></span>
+                                    <span><i className = "fas fa-star"></i></span>
                                     
                                 </div>
                             </div>
@@ -66,11 +68,10 @@ function Product(){
                         </div>
                     </div>
                    
-                    {/* single product  */}
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product_img">
-                                <img src = "img/goal2.png" alt = "product image"></img>
+                                <img src = "assets/img/goal2.png" alt = "product image"/>
                             </div>
                         </div>
 
@@ -82,7 +83,7 @@ function Product(){
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "far fa-star"></i></span>
+                                    <span><i className = "fas fa-star"></i></span>
                                 </div>
                             </div>
                             <a href = "#" className = "product_name">Soccer Goal Post</a>
@@ -93,11 +94,12 @@ function Product(){
                         </div>
                     </div>
                   
-                     {/* single product */}
+
+                     
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product_img">
-                                <img src = "img/shin.jpeg" alt = "product image"></img>
+                                <img src = "assets/img/shin.jpeg" alt = "product image"/>
                             </div>
                         </div>
 
@@ -121,11 +123,11 @@ function Product(){
 
                         
                     </div>
-                     {/* single product */}
+                     
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product_img">
-                                <img src = "img/cleats1.jpeg" alt = "product image"></img>
+                                <img src = "assets/img/cleats1.jpeg" alt = "product image"/>
                             </div>
                            
                         </div>
@@ -138,7 +140,7 @@ function Product(){
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "far fa-star"></i></span>
+                                    <span><i className = "fas fa-star"></i></span>
                                 </div>
                             </div>
                             <a href = "#" className = "product_name">Adidas Superfly</a>
@@ -149,11 +151,11 @@ function Product(){
                         </div>
                     </div>
                     
-                  {/* single product  */}
+                  
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product_img">
-                                <img src = "img/cleats2.jpeg" alt = "product image"></img>
+                                <img src = "assets/img/cleats2.jpeg" alt = "product image"/>
                             </div>
                             
                         </div>
@@ -166,7 +168,7 @@ function Product(){
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "far fa-star"></i></span>
+                                    <span><i className = "fas fa-star"></i></span>
                                 </div>
                             </div>
                             <a href = "#" className = "product_name">Nike Premier II FG</a>
@@ -177,11 +179,11 @@ function Product(){
                         </div>
                     </div>
                    
-                   {/* single product  */}
+                   
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product_img">
-                                <img src = "img/cleats3.jpeg" alt = "product image"> </img>
+                                <img src = "assets/img/cleats3.jpeg" alt = "product image"/> 
                             </div>
                             
                         </div>
@@ -194,7 +196,7 @@ function Product(){
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "far fa-star"></i></span>
+                                    <span><i className = "fas fa-star"></i></span>
                                 </div>
                             </div>
                             <a href = "#" className = "product_name">Nike Mercurial FG</a>
@@ -205,11 +207,11 @@ function Product(){
                         </div>
                     </div>
                     
-                    {/* single product */}
+                    
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product_img">
-                                <img src = "img/cleats4.jpeg" alt = "product image"></img>
+                                <img src = "assets/img/cleats4.jpeg" alt = "product image"/>
                             </div>
                             
                         </div>
@@ -235,11 +237,11 @@ function Product(){
                         
                     </div>
                   
-                    {/* single product */}
+                    
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product_img">
-                                <img src = "img/kit1.jpeg" alt = "product image"></img>
+                                <img src = "assets/img/kit1.jpeg" alt = "product image"/>
                             </div>
                         </div>
 
@@ -251,7 +253,7 @@ function Product(){
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "far fa-star"></i></span>
+                                    <span><i className = "fas fa-star"></i></span>
                                 </div>
                             </div>
                             <a href = "#" className = "product_name">Barcelona Home kit</a>
@@ -264,11 +266,11 @@ function Product(){
                         
                     </div>
                     
-                     {/* single product  */}
+                     
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product_img">
-                                <img src = "img/kit2.jpeg" alt = "product image"></img>
+                                <img src = "assets/img/kit2.jpeg" alt = "product image"/>
                             </div>
                         </div>
 
@@ -280,7 +282,7 @@ function Product(){
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "far fa-star"></i></span>
+                                    <span><i className = "fas fa-star"></i></span>
                                 </div>
                             </div>
                             <a href = "#" className = "product_name">Real Madrid Home kit</a>
@@ -291,11 +293,11 @@ function Product(){
                         </div>
                     </div>
                    
-                    {/* single product  */}
+                    
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product_img">
-                                <img src = "img/kit3.jpeg" alt = "product image"></img>
+                                <img src = "assets/img/kit3.jpeg" alt = "product image"/>
                             </div>
                         </div>
 
@@ -307,10 +309,10 @@ function Product(){
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "far fa-star"></i></span>
+                                    <span><i className = "fas fa-star"></i></span>
                                 </div>
                             </div>
-                            <a href = "#" className = "product_name">Bayern Munich Home kit</a>
+                            <a href = "#" className = "product_name">Ajax Home kit</a>
                             <p className = "product-price">$ 89.99</p>
                             <button type = "button" className = "buyButton"> buy now
                                 <span><i className = "fas fa-shopping-cart"></i></span>
@@ -318,11 +320,11 @@ function Product(){
                         </div>
                     </div>
                     
-                  {/* single product */}
+                  
                     <div className = "product">
                         <div className = "product-content">
                             <div className = "product_img">
-                                <img src = "img/kit4.jpeg" alt = "product image"></img>
+                                <img src = "assets/img/kit4.jpeg" alt = "product image"/>
                             </div>
                         </div>
 
@@ -334,7 +336,7 @@ function Product(){
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
                                     <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "far fa-star"></i></span>
+                                    <span><i className = "fas fa-star"></i></span>
                                 </div>
                             </div>
                             <a href = "#" className = "product_name">Liverpool Home Kit</a>
@@ -346,7 +348,7 @@ function Product(){
 
                        
                     </div>
-                     {/* end of product */}
+                     
                 </div>
             </div>
         </div>
@@ -354,27 +356,27 @@ function Product(){
         <div className = "product-collection">
             <div className = "container">
                 <div className = "product-collection-wrapper">
-                     {/* product col left */}
+                     
                     <div className = "product-col-left flex">
                         <div className = "product-col-content">
                             <h2 className = "md-title">men's collection </h2>
-                            <p className = "text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.</p>
+                            <p className = "text-light2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.</p>
                             <button type = "button" className = "btn-dark">Shop now</button>
                         </div>
                     </div>
 
-                  {/* product col right  */}
+                  
                     <div className = "product-col-right">
                         <div className = "product-col-r-top flex">
                             <div className = "product-col-content">
                                 <h2 className = "md-title">women's collection </h2>
-                                <p className = "text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.</p>
+                                <p className = "text-light2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.</p>
                                 <button type = "button" className = "btn-dark">Shop now</button>
                             </div>
                         </div>
 
                         <div className = "product-col-r-bottom">
-                             {/* left */}
+                             
                             <div className = "flex">
                                 <div className = "product-col-content">
                                     <h2 className = "starRating"> </h2>
@@ -382,7 +384,7 @@ function Product(){
                                     <button type = "button" className = "btn-dark">Shop now</button>
                                 </div>
                             </div>
-                            {/* right  */}
+                            
                             <div className = "flex">
                                 <div className = "product-col-content">
                                     <h2 className = "starRating">summer sale </h2>

@@ -7,18 +7,18 @@ const hero = {
 function Home(){
     return (
         <main>
-	 {/* Hero Section  */}
-	<section id="hero">
+	 
+	<section id="hero" style ={hero}>
 		<div className="hero-content">
 			<h1>Charlotte's Finest Soccer Experience</h1>
 			<a href="product.html">SHOP NOW</a>
 		</div>
 	</section>
 
-	 {/* Aboutus  */}
+	
 	<section>
 		<h1 className="topic">Our Culture</h1>
-		<div className="container">
+		<div className="culturecontainer">
 			<div className="row">
 				<div className="col">
 					<p>
@@ -44,7 +44,20 @@ function Home(){
 					</p>
 				</div>
 				<div className="col">
-					<img className="gif" src="assets/img/humansoccer.webp" alt="" />
+                <span id="gif-1"></span>
+                <span id="gif-2"></span>
+                <span id="gif-3"></span>
+                <div id="image-container">
+                    <img src="./assets/img/germany.webp" id="slider-image" alt="assets/img/germany.webp"/>
+                    <img src="./assets/img/usa.webp" id="slider-image" alt="assets/img/usa.webp"/>
+                    <img src="./assets/img/womenusa.webp" id="slider-image" alt="assets/img/womenusa.webp"/>
+                </div>
+				<div id="button-container">
+                    <a href="#slider-image-1" id="slider-button" aria-label="btn1"></a>
+                    <a href="#slider-image-2" id="slider-button" aria-label="btn2"></a>
+                    <a href="#slider-image-3" id="slider-button" aria-label="btn3"></a>
+                </div>
+            
 				</div>
 			</div>
 		</div>
@@ -53,27 +66,27 @@ function Home(){
 	<div className = "product-collection">
 		<div className = "container">
 			<div className = "product-collection-wrapper">
-				 {/* product col left  */}
+				 
 				<div className = "product-col-left flex">
 					<div className = "product-col-content">
 						<h2 className = "md-title">men's collection </h2>
-						<p className = "text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.</p>
+						<p className = "text-light2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.</p>
 						<button type = "button" className = "btn-dark">Shop now</button>
 					</div>
 				</div>
 
-				 {/* product col right  */}
+				 
 				<div className = "product-col-right">
 					<div className = "product-col-r-top flex">
 						<div className = "product-col-content">
 							<h2 className = "md-title">women's collection </h2>
-							<p className = "text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.</p>
+							<p className = "text-light2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.</p>
 							<button type = "button" className = "btn-dark">Shop now</button>
 						</div>
 					</div>
 
 					<div className = "product-col-r-bottom">
-					    {/* left */}
+					   
 						<div className = "flex">
 							<div className = "product-col-content">
 								<h2 className = "starRating"> </h2>
@@ -82,7 +95,7 @@ function Home(){
 							</div>
 						</div>
 						
-                          {/* right */}
+                          
 						<div className = "flex">
 							<div className = "product-col-content">
 								<h2 className = "starRating">summer sale </h2>

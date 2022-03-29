@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {Link} from 'react-router-dom';
 function Header() {
     return (
@@ -8,7 +8,7 @@ function Header() {
             </div>
             <div className="nav">
                 <ul className="nav">
-                    <li><Link to="/Home">Home</Link></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/Product">Products</Link></li>
                     <li><Link to="/Contact">Contact</Link></li>
                     <li>
