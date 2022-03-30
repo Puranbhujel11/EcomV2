@@ -1,5 +1,6 @@
 import React from 'react';
 import heroImg from './ecomhero.jpeg'
+import { Link } from 'react-router-dom';
 const hero = {
     backgroundImage: `url(${heroImg})`,
 }
@@ -11,7 +12,7 @@ function Home(){
 	<section id="hero" style ={hero}>
 		<div className="hero-content">
 			<h1>Charlotte's Finest Soccer Experience</h1>
-			<a href="product.html">SHOP NOW</a>
+			<Link to ="/Product">SHOP NOW</Link>
 		</div>
 	</section>
 
