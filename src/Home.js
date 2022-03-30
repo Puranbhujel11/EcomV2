@@ -44,12 +44,13 @@ function Home(){
 					</p>
 				</div>
 				<div className="col">
-                <span id="gif-1"></span>
-                <span id="gif-2"></span>
-                <span id="gif-3"></span>
+				<section id="slide-container">
+				<span id="slider-image-1"></span>
+                <span id="slider-image-2"></span>
+                <span id="slider-image-3"></span>
                 <div id="image-container">
+                    <img src="./assets/img/womenusa.webp" id="slider-image" alt="assets/img/womenusa.webp"/>
                     <img src="./assets/img/germany.webp" id="slider-image" alt="assets/img/germany.webp"/>
-                    <img src="./assets/img/usa.webp" id="slider-image" alt="assets/img/usa.webp"/>
                     <img src="./assets/img/womenusa.webp" id="slider-image" alt="assets/img/womenusa.webp"/>
                 </div>
 				<div id="button-container">
@@ -57,7 +58,7 @@ function Home(){
                     <a href="#slider-image-2" id="slider-button" aria-label="btn2"></a>
                     <a href="#slider-image-3" id="slider-button" aria-label="btn3"></a>
                 </div>
-            
+				</section>
 				</div>
 			</div>
 		</div>

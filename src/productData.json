@@ -1,74 +1,98 @@
 [
     {
-        "image": "assets/img/pump.jpeg",
-        "title": "Air Pump",
+        "id":1,
+        "name": "Air Pump",
         "price": "$9.99",
-        "description":"Fill the air in in ball."
+        "image": "assets/img/pump.jpeg",
+        "description":"Fill the air in in ball.",
+        "category": "Equipments"
     },
     {
-        "image": "assets/img/goal1.png",
-        "title": "Small Goal Post",
+        "id":2,
+        "name": "Small Goal Post",
         "price": "$199.99",
-        "description":"This is 3ft tall and 5ft wide."
+        "image": "assets/img/goal1.png",
+        "description":"This is 3ft tall and 5ft wide.",
+        "category": "Equipments"
     },
     {
-        "image": "assets/img/goal2.png",
-        "title": "Soccer Goal Post",
+       "id":3,
+        "name": "Soccer Goal Post",
         "price": "$399.99",
-        "description":"This is a 8 feet tall (2.44 m) by 24 feet wide (7.32 m)."
+        "image": "assets/img/goal2.png",
+        "description":"This is a 8 feet tall (2.44 m) by 24 feet wide (7.32 m).",
+        "category": "Equipments"
     },
     {
-        "image": "assets/img/shin.jpeg",
-        "title": "Nike Mercurial",
+        "id":4,
+        "name": "Nike Mercurial",
         "price": "$20.00",
-        "description":"protect your feet "
+        "image": "assets/img/shin.jpeg",
+        "description":"protect your feet ",
+        "category": "Equipments"
     },
     {
-        "image": "assets/img/cleats1.jpeg",
-        "title": "Adidas superfly",
+        "id":5,
+        "name": "Adidas superfly",
         "price": "$120.00",
-        "description":"The Nike Mercurial sets you up for speed."
+        "image": "assets/img/cleats1.jpeg",
+        "description":"The Nike Mercurial sets you up for speed.",
+        "category": "Cleats"
     },
     {
-        "image": "assets/img/cleats2.jpeg",
-        "title": "Nike Premier II FG",
+        "id":6,
+        "name": "Nike Premier II FG",
         "price": "$150.00",
-        "description":"Robust Challenge lorem "
+        "image": "assets/img/cleats2.jpeg",
+        "description":"Robust Challenge lorem ",
+        "category": "Cleats"
     },
     {
-        "image": "assets/img/cleats3.jpeg",
-        "title": "Nike Mercurial FG",
+        "id":7,
+        "name": "Nike Mercurial FG",
         "price": "$130.00",
-        "description":"Soft kangaroo leather conforms to your foot for a classic."
+        "image": "assets/img/cleats3.jpeg",
+        "description":"Soft kangaroo leather conforms to your foot for a classic.",
+        "category": "Cleats"
     },
     {
-        "image": "assets/img/cleats4.jpeg",
-        "title": "Nike Phantom",
+        "id":8,
+        "name": "Nike Phantom",
         "price": "$110.00",
-        "description":"dynamic fit collar and versatile multi-surface"
+        "image": "assets/img/cleats4.jpeg",
+        "description":"dynamic fit collar and versatile multi-surface.",
+        "category": "Cleats"
     },
     {
-        "image": "assets/img/shin.jpeg",
-        "title": "Barcelona Home Kit",
+        "id":9,
+        "name": "Barcelona Home Kit",
         "price": "$89.99",
-        "description":"The FC Barcelona Stadium Home Jersey features highly breathable fabric."
+        "image": "assets/img/kit1.jpeg",
+        "description":"The FC Barcelona Stadium Home Jersey features highly breathable fabric.",
+        "category": "Jerseys"
     },
     {
-        "image": "assets/img/shin.jpeg",
-        "title": "Real Madrid Home Kit",
+        "id":10,
+        "name": "Real Madrid Home Kit",
         "price": "$89.99",
-        "description":"This shirt will keep you comfortable with soft fabric and moisture-absorbing AEROREADY."
+        "image": "assets/img/kit2.jpeg",
+        "description":"This shirt will keep you comfortable with soft fabric and moisture-absorbing AEROREADY.",
+        "category": "Jerseys"
     },
     {
-        "image": "assets/img/shin.jpeg",
-        "title": "Ajax Home Kit",
+        "id":11,
+        "name": "Ajax Home Kit",
         "price": "$89.99",
-        "description":"Highly breathable fabric helps keep sweat off your skin."
+        "image": "assets/img/kit3.jpeg",
+        "description":"Highly breathable fabric helps keep sweat off your skin.",
+        "category": "Jerseys"
     },
     {
-        "image": "assets/img/shin.jpeg",
-        "title": "Liverpool Home Kit",
+        "id":12,
+        "name": "Liverpool Home Kit",
         "price": "$89.99",
-        "description":"Highly breathable fabric helps keep sweat off your skin."
+        "image": "assets/img/kit4.jpeg",
+        "description":"Highly breathable fabric helps keep sweat off your skin.",
+        "category": "Jerseys"
     }
 ]

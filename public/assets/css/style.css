@@ -222,7 +222,7 @@
     background: var(--082650);
   }
 
-  .col {
+  #slide-container {
     width: 800px;
     height: 600px;
     margin-left: auto;
@@ -257,13 +257,13 @@
   background-color: black;
   margin-right: 0.5%;
 }
-#gif-1:target~#image-container {
+#slider-image-1:target~#image-container {
   left: 0px;
 }
-#gif-2:target~#image-container {
+#slider-image-2:target~#image-container {
   left: -800px;
 }
-#gif-3:target~#image-container {
+#slider-image-3:target~#image-container {
   left: -1600px;
 }
   

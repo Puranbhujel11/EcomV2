@@ -55,6 +55,11 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+.filterBtn{
+    text-align: right;
+    margin-right: 150px;
+}
+
 /* titles and img stylings */
 img{
     width: 100%;

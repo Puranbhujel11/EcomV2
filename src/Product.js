@@ -1,353 +1,70 @@
 import React from 'react';
-import productList from './productData.json';
+// import productList from './productData.json';
+import axios from 'axios'
 
-function Product(){
+
+export default class Product extends React.Component{
+    state={
+        productdata:[],
+    }
+    componentDidMount(){
+        axios.get('/api/products').then(res =>{
+            this.setState({productdata: res.data})
+        })
+    }
+    render(){
     return (
 <main className="content">
+<div className="filterBtn">
+    <form>
+        <label>Sort By:</label>
+        <select name="list" id="list">
+            <option value="product.js">All</option>
+            <option value="Equipments">Equipments</option>
+            <option value="Cleats">Cleats</option>
+            <option value="Jerseys">Jerseys</option>
+             </select>
+                 </form>
+                 </div>
 
 <div className = "products">
+
             <div className = "container">
                 <h1 className = "title">Soccer Gears</h1>
                 <p className = "text-light">Whether you’re a first time player or looking to get a bit more serious in your soccer career, Soccer United has a full stock of soccer shoes to help you be the best player you can be.</p>
 
                 <div className = "product-items">
-                 
-                    <div className = "product">
-                        <div className = "product-content">
-                            <div className = "product_img">
-                                <img src = "assets/img/pump.jpeg" alt = "product image"/> 
-                            </div>
-                        </div>
-                        <div className = "product-info">
-                            <div className = "product-info-top">
-                                <h2 className = "starRating">Ratings</h2>
-                                <div className = "rating">
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
+                 {
+                    this.state.productdata.map((card) => {
+                         return(
+                            <div className = "product">
+                            <div className = "product-content">
+                                <div className = "product_img">
+                                    <img src = {card.image}alt = {card.name}/> 
                                 </div>
                             </div>
-                            <a href = "#" className = "product_name">Nike Air Pump</a>
-                            <p className = "product-price">$ 9.99</p>
-                            <button type = "button" className = "buyButton"> buy now
-                                <span><i className = "fas fa-shopping-cart"></i></span>
-                            </button>
-                        </div>
-                    </div>
-
-
-                    
-                   
-                    <div className = "product">
-                        <div className = "product-content">
-                            <div className = "product_img">
-                                <img src = "assets/img/goal1.png" alt = "product image"/>  
-                            </div>
-                           
-                        </div>
-
-                        <div className = "product-info">
-                            <div className = "product-info-top">
-                                <h2 className = "starRating">Ratings</h2>
-                                <div className = "rating">
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    
+                            <div className = "product-info">
+                                <div className = "product-info-top">
+                                    <h2 className = "starRating">Ratings</h2>
+                                    <div className = "rating">
+                                        <span><i className = "fas fa-star"></i></span>
+                                        <span><i className = "fas fa-star"></i></span>
+                                        <span><i className = "fas fa-star"></i></span>
+                                        <span><i className = "fas fa-star"></i></span>
+                                        <span><i className = "fas fa-star"></i></span>
+                                    </div>
                                 </div>
-                            </div>
-                            <a href = "#" className = "product_name">Small Goal Post</a>
-                            <p className = "product-price">$ 199.99</p>
-                            <button type = "button" className = "buyButton"> buy now
-                                <span><i className = "fas fa-shopping-cart"></i></span>
-                            </button>
-                        </div>
-                    </div>
-                   
-                    <div className = "product">
-                        <div className = "product-content">
-                            <div className = "product_img">
-                                <img src = "assets/img/goal2.png" alt = "product image"/>
+                                <a href = "#" className = "product_name">{card.name}</a>
+                                <p className = "product-price">${card.price}</p>
+                                <button type = "button" className = "buyButton"> buy now
+                                    <span><i className = "fas fa-shopping-cart"></i></span>
+                                </button>
                             </div>
                         </div>
 
-                        <div className = "product-info">
-                            <div className = "product-info-top">
-                                <h2 className = "starRating">Ratings</h2>
-                                <div className = "rating">
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                </div>
-                            </div>
-                            <a href = "#" className = "product_name">Soccer Goal Post</a>
-                            <p className = "product-price">$ 399.99</p>
-                            <button type = "button" className = "buyButton"> buy now
-                                <span><i className = "fas fa-shopping-cart"></i></span>
-                            </button>
-                        </div>
-                    </div>
-                  
-
-                     
-                    <div className = "product">
-                        <div className = "product-content">
-                            <div className = "product_img">
-                                <img src = "assets/img/shin.jpeg" alt = "product image"/>
-                            </div>
-                        </div>
-
-                        <div className = "product-info">
-                            <div className = "product-info-top">
-                                <h2 className = "starRating">Ratings</h2>
-                                <div className = "rating">
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                </div>
-                            </div>
-                            <a href = "#" className = "product_name">Nike Mercurial</a>
-                            <p className = "product-price">$ 20.00</p>
-                            <button type = "button" className = "buyButton"> buy now
-                                <span><i className = "fas fa-shopping-cart"></i></span>
-                            </button>
-                        </div>
-
-                        
-                    </div>
-                     
-                    <div className = "product">
-                        <div className = "product-content">
-                            <div className = "product_img">
-                                <img src = "assets/img/cleats1.jpeg" alt = "product image"/>
-                            </div>
-                           
-                        </div>
-
-                        <div className = "product-info">
-                            <div className = "product-info-top">
-                                <h2 className = "starRating">Ratings</h2>
-                                <div className = "rating">
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                </div>
-                            </div>
-                            <a href = "#" className = "product_name">Adidas Superfly</a>
-                            <p className = "product-price">$ 120.00</p>
-                            <button type = "button" className = "buyButton"> buy now
-                                <span><i className = "fas fa-shopping-cart"></i></span>
-                            </button>
-                        </div>
-                    </div>
-                    
-                  
-                    <div className = "product">
-                        <div className = "product-content">
-                            <div className = "product_img">
-                                <img src = "assets/img/cleats2.jpeg" alt = "product image"/>
-                            </div>
-                            
-                        </div>
-
-                        <div className = "product-info">
-                            <div className = "product-info-top">
-                                <h2 className = "starRating">Ratings</h2>
-                                <div className = "rating">
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                </div>
-                            </div>
-                            <a href = "#" className = "product_name">Nike Premier II FG</a>
-                            <p className = "product-price">$ 150.00</p>
-                            <button type = "button" className = "buyButton"> buy now
-                                <span><i className = "fas fa-shopping-cart"></i></span>
-                            </button>
-                        </div>
-                    </div>
-                   
-                   
-                    <div className = "product">
-                        <div className = "product-content">
-                            <div className = "product_img">
-                                <img src = "assets/img/cleats3.jpeg" alt = "product image"/> 
-                            </div>
-                            
-                        </div>
-
-                        <div className = "product-info">
-                            <div className = "product-info-top">
-                                <h2 className = "starRating">Ratings</h2>
-                                <div className = "rating">
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                </div>
-                            </div>
-                            <a href = "#" className = "product_name">Nike Mercurial FG</a>
-                            <p className = "product-price">$ 130.00</p>
-                            <button type = "button" className = "buyButton"> buy now
-                                <span><i className = "fas fa-shopping-cart"></i></span>
-                            </button>
-                        </div>
-                    </div>
-                    
-                    
-                    <div className = "product">
-                        <div className = "product-content">
-                            <div className = "product_img">
-                                <img src = "assets/img/cleats4.jpeg" alt = "product image"/>
-                            </div>
-                            
-                        </div>
-
-                        <div className = "product-info">
-                            <div className = "product-info-top">
-                                <h2 className = "starRating">Ratings</h2>
-                                <div className = "rating">
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                </div>
-                            </div>
-                            <a href = "#" className = "product_name">Nike Phantom</a>
-                            <p className = "product-price">$ 110.00</p>
-                            <button type = "button" className = "buyButton"> buy now
-                                <span><i className = "fas fa-shopping-cart"></i></span>
-                            </button>
-                        </div>
-
-                        
-                    </div>
-                  
-                    
-                    <div className = "product">
-                        <div className = "product-content">
-                            <div className = "product_img">
-                                <img src = "assets/img/kit1.jpeg" alt = "product image"/>
-                            </div>
-                        </div>
-
-                        <div className = "product-info">
-                            <div className = "product-info-top">
-                                <h2 className = "starRating">Ratings</h2>
-                                <div className = "rating">
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                </div>
-                            </div>
-                            <a href = "#" className = "product_name">Barcelona Home kit</a>
-                            <p className = "product-price">$ 89.99</p>
-                            <button type = "button" className = "buyButton"> buy now
-                                <span><i className = "fas fa-shopping-cart"></i></span>
-                            </button>
-                        </div>
-
-                        
-                    </div>
-                    
-                     
-                    <div className = "product">
-                        <div className = "product-content">
-                            <div className = "product_img">
-                                <img src = "assets/img/kit2.jpeg" alt = "product image"/>
-                            </div>
-                        </div>
-
-                        <div className = "product-info">
-                            <div className = "product-info-top">
-                                <h2 className = "starRating">Ratings</h2>
-                                <div className = "rating">
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                </div>
-                            </div>
-                            <a href = "#" className = "product_name">Real Madrid Home kit</a>
-                            <p className = "product-price">$ 89.99</p>
-                            <button type = "button" className = "buyButton"> buy now
-                                <span><i className = "fas fa-shopping-cart"></i></span>
-                            </button>
-                        </div>
-                    </div>
-                   
-                    
-                    <div className = "product">
-                        <div className = "product-content">
-                            <div className = "product_img">
-                                <img src = "assets/img/kit3.jpeg" alt = "product image"/>
-                            </div>
-                        </div>
-
-                        <div className = "product-info">
-                            <div className = "product-info-top">
-                                <h2 className = "starRating">Ratings</h2>
-                                <div className = "rating">
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                </div>
-                            </div>
-                            <a href = "#" className = "product_name">Ajax Home kit</a>
-                            <p className = "product-price">$ 89.99</p>
-                            <button type = "button" className = "buyButton"> buy now
-                                <span><i className = "fas fa-shopping-cart"></i></span>
-                            </button>
-                        </div>
-                    </div>
-                    
-                  
-                    <div className = "product">
-                        <div className = "product-content">
-                            <div className = "product_img">
-                                <img src = "assets/img/kit4.jpeg" alt = "product image"/>
-                            </div>
-                        </div>
-
-                        <div className = "product-info">
-                            <div className = "product-info-top">
-                                <h2 className = "starRating">Ratings</h2>
-                                <div className = "rating">
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                    <span><i className = "fas fa-star"></i></span>
-                                </div>
-                            </div>
-                            <a href = "#" className = "product_name">Liverpool Home Kit</a>
-                            <p className = "product-price">$ 89.99</p>
-                            <button type = "button" className = "buyButton"> buy now
-                                <span><i className = "fas fa-shopping-cart"></i></span>
-                            </button>
-                        </div>
-
-                       
-                    </div>
+                         )
+                     })
+                 }
                      
                 </div>
             </div>
@@ -400,6 +117,6 @@ function Product(){
         </div>
 </main>
     )
+                }
 }
 
-export default Product;
