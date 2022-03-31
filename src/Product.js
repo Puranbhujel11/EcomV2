@@ -8,7 +8,7 @@ export default class Product extends React.Component{
         productdata:[],
     }
     componentDidMount(){
-        axios.get('/api/products').then(res =>{
+        axios.get('http://localhost:4000/api/products').then(res =>{
             this.setState({productdata: res.data})
         })
     }
